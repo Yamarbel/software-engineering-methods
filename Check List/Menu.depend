@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1556112497 source:c:\users\ori\desktop\qt projects\menu\main.cpp
-	<iostream>
-	<string>
-	<windows.h>
-
