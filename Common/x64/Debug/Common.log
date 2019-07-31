@@ -1,0 +1,8 @@
+﻿  EventEngine.cpp
+  RadioBox.cpp
+C:\Users\USER\Desktop\FinalShitot-master\Common\RadioBox.cpp(13,44): warning C4267:  '=': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\USER\Desktop\FinalShitot-master\Common\RadioBox.cpp(21,44): warning C4267:  '=': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\USER\Desktop\FinalShitot-master\Common\RadioBox.cpp(31,52): warning C4267:  'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+C:\Users\USER\Desktop\FinalShitot-master\Common\RadioBox.cpp(37,37): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+  Common.vcxproj -> C:\Users\USER\Desktop\FinalShitot-master\x64\Debug\Common.lib

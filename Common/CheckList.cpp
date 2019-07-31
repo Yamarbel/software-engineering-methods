@@ -1,13 +1,6 @@
 #include "CheckList.h"
 
-/*
-Checker List:
-Show list of option to choose.
-It possible to select more than one.
 
-*/
-
-//s
 CheckList::CheckList(short left, short top, int optNum) : Control(left, top), arrow(0) { 
 	this->isClick = true;
 	isLast = false;
@@ -30,7 +23,6 @@ CheckList::~CheckList()
 }
 
 
-//Draw in screen
 void CheckList::draw(Graphics& g, bool doubleborder) {
 	drawIt(g, this, doubleborder);
 }
@@ -42,24 +34,24 @@ void CheckList::drawInside(Graphics& g, bool doubleborder) {
 		g.write(this->getLeft(), this->getTop() + i, temp);
 	}
 }
-//move cursor up
-void CheckList::goUp() { //Move arrow up
+
+void CheckList::goUp() { 
 	if (arrow == 0) arrow = list.size();
 	arrow = --arrow % list.size();
 }
-//move cursor down
-void CheckList::goDown() { // move arrow down
+
+void CheckList::goDown() { 
 	arrow = ++arrow % list.size();
 }
 
 
-void CheckList::goTab() { // move arrow down
+void CheckList::goTab() { 
 	if (arrow + 1 == list.size()) isLast = true;
 	else this->goDown();
 }
 
-//Choose Item
-void CheckList::choose() { // choose option
+
+void CheckList::choose() { 
 	list.at(arrow).selected = !list.at(arrow).selected;
 }
 
