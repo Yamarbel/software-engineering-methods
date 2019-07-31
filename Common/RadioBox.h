@@ -14,8 +14,8 @@ public:
 	RadioBox(short left, short top, int optNum);
 	RadioBox();
 
-	void draw(Graphics& g);
-	virtual void drawInside(Graphics& g);
+	void draw(Graphics& g, bool doubleborder);
+	virtual void drawInside(Graphics& g, bool doubleborder);
 	void keyDown(int keyCode, char character, Graphics& g);
 	void goUp();
 	void goDown();

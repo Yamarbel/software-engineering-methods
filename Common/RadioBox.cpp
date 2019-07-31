@@ -20,10 +20,10 @@ RadioBox::RadioBox() : Control(), arrow(0) {
 	this->height = 5;
 	this->width = this->list.at(0).name.size();
 }
-void RadioBox::draw(Graphics& g) {
-	drawIt(g, this);
+void RadioBox::draw(Graphics& g, bool doubleborder) {
+	drawIt(g,this,doubleborder);
 }
-void RadioBox::drawInside(Graphics& g) {
+void RadioBox::drawInside(Graphics& g, bool doubleborder) {
 	string temp;
 	for (size_t i = 0; i < this->list.size(); i++) {
 		temp = ((list.at(i).selected) ? "(*) " : "( ) ") + list.at(i).name + ((i == arrow) ? " <" : "");
